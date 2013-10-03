@@ -12,9 +12,9 @@ class Ronin < Sinatra::Base
   register Sinatra::AssetPack
 
   assets do
-    serve '/js',     from: 'javascripts'
-    serve '/css',    from: 'stylesheets'
-    serve '/images', from: 'images'    # Default
+    serve '/js',     from: 'assets/javascripts'
+    serve '/css',    from: 'assets/stylesheets'
+    serve '/images', from: 'assets/images'    # Default
 
     # The second parameter defines where the compressed version will be served.
     # (Note: that parameter is optional, AssetPack will figure it out.)
@@ -30,7 +30,6 @@ class Ronin < Sinatra::Base
     js_compression  :jsmin    # :jsmin | :yui | :closure | :uglify
     css_compression :scss   # :simple | :sass | :yui | :sqwish
     cache_dynamic_assets true
-    prebuild true
   end
 end
 
