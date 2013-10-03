@@ -1,0 +1,14 @@
+.card {
+  &:before {
+    display: block;
+    content: '';
+    width: 100%;
+    height: 128px;
+    padding-bottom: 1rem;
+    background: transparent top center no-repeat;
+  }
+}
+
+.card__title {
+  text-align: center;
+}

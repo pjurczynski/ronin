@@ -1,0 +1,10 @@
+/* TEAM */
+  Chef:Peter Jurczyński
+  Contact:pjurczynski (at) gmail.com
+  From:Cracow, Poland
+
+/* SITE */
+  Last update:20.02.2012
+  Language:English
+  Doctype:HTML5
+  IDE:vim

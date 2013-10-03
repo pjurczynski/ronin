@@ -1,0 +1,86 @@
+.intro-text {
+  position: relative;
+  margin-top: 1em;
+
+}
+  .intro-text__intro-sword {
+    width: 80%;
+    max-height: 70vh;
+    margin: 0 auto 0;
+    display: block;
+    position: relative;
+    z-index: 10;
+  }
+
+  .intro-text__first-part {
+    position: absolute;
+    top: 4%;
+    background-color: rgba( white, 0.9 )
+  }
+  .intro-text__second-part,
+  .intro-text__first-part {
+    z-index: 20;
+    font-size: 7vmin;
+  }
+  
+  .intro-text__second-part {
+    position: relative;
+    text-align: right;
+  }
+
+.skills {
+  background-color: $skills-background-color;
+}
+
+.samurai {
+  @include border-box;
+  height: 552px;
+  background: $samurai-background-color url('/images/samurai_japan.gif') 77% bottom no-repeat;
+}
+
+.overlay-text--samurai {
+  background-color: rgba( $samurai-background-color, 0.9 );
+}
+
+.footer {
+  @include clearfix;
+  background: black;
+  padding-top: 3em;
+}
+
+.social-list {
+  list-style: none;
+  padding-left: 0;
+  margin-top: 0;
+  margin-left: 5%;
+  &:before {
+    background: transparent top left no-repeat;
+  }
+}
+
+.mail_me {
+  float: right;
+  font-size: 3em;
+  font-family: 'Poiret One';
+}
+
+.breathe {
+  padding-left: 5%;
+  padding-right: 5%;
+}
+
+.html {
+  &:before {
+    background-image: url('/images/html.png');
+  }
+}
+.js {
+  &:before {
+    background-image: url('/images/js.png');
+  }
+}
+.css {
+  &:before {
+    background-image: url('/images/css.png');
+  }
+}

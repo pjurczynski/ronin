@@ -1,0 +1,14 @@
+.nav {
+    list-style:none;
+    margin-left:0;
+
+    > li{
+
+        &,
+        > a{
+            display:inline-block;
+           *display:inline;
+            zoom:1;
+        }
+    }
+}

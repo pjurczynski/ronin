@@ -1,0 +1,55 @@
+body {
+  font-family: Verdana;
+  font-size: 0.9em;
+  color: $color-default;
+  -webkit-font-smoothing: antialiased;
+}
+
+h1, h2, h3 {
+  font-family: "Poiret One", Verdana, sans-serif;
+  font-style: normal;
+  font-weight: 400;
+}
+
+h1, h2, h3, h4, p {
+  margin-top: 0;
+}
+
+h1 { font-size: 2.4em; }
+h2 { font-size: 2em; }
+h3 { font-size: 1.6em; }
+p  { line-height: 1.4em; }
+
+a {
+  text-decoration: none;
+  border-bottom-width: 1px;
+  border-bottom-style:  solid;
+  border-bottom-color:  $color-accent;
+  color: $color-accent;
+  &:visited {
+    color: lighten( $color-accent, 20% );
+    border-bottom-color: lighten( $color-accent, 20% );
+  }
+}
+
+section {
+  padding: 7vw 5%;
+  border-top: 1px solid #ccc;
+}
+
+header {
+  margin-bottom: 1rem;
+}
+
+.rounded {
+  @include border-radius( $brand-round );
+}
+
+[class*=overlay-text] {
+  background-color: rgba( white, 0.9 );
+  padding: 3%;
+}
+
+.text {
+  max-width: 80ex;
+}
