@@ -12,9 +12,9 @@ class Ronin < Sinatra::Base
   register Sinatra::AssetPack
 
   assets do
-    serve '/js',     from: 'assets/javascripts'
-    serve '/css',    from: 'assets/stylesheets'
-    serve '/images', from: 'assets/images'    # Default
+    serve '/js',     from: 'javascripts'
+    serve '/css',    from: 'stylesheets'
+    serve '/images', from: 'images'    # Default
 
     # The second parameter defines where the compressed version will be served.
     # (Note: that parameter is optional, AssetPack will figure it out.)
