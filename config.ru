@@ -1,8 +1,8 @@
-require 'rack-livereload'
+# require 'rack-livereload'
 require 'rubygems'
 require 'bundler'
 Bundler.require
-use Rack::LiveReload
+# use Rack::LiveReload
 
 class Ronin < Sinatra::Base
   set :root, File.dirname(__FILE__) # You must set app root
