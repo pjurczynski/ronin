@@ -30,6 +30,7 @@ class Ronin < Sinatra::Base
     js_compression  :jsmin    # :jsmin | :yui | :closure | :uglify
     css_compression :scss   # :simple | :sass | :yui | :sqwish
     cache_dynamic_assets true
+    prebuild true
   end
 end
 
